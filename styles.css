@@ -1,4 +1,134 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+
+#titleWrapper{
+    background-color: #91C6EC;
+    font-size: 30px;
+    color: #fff;
+    height: 5vh;
+}
+#title{
+    margin-top: 10px;
+    position: absolute;
+}
 #Loading{
     display: none
+}
+
+#searchWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
+    border: solid 1px #E7E8E7;
+    font-weight: 900;
+    border-radius: 10px;
+    padding: 10px;
+    height: 15vh;
+}
+#search{
+    width: 98vw;
+    height: 6vh;
+    font-size: 30px;
+    border-radius: 10px;
+
+}
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#userProfile{
+    display: none;
+    flex-direction:row;
+    border: solid 1px black;
+    padding: 10px;
+    width: 98vw;
+    border-radius: 10px;
+
+}
+#userAvatar{
+    width: 10vw;
+}
+#userGitLog{
+    height: 30vh;
+}
+#repoList{
+    display:none;
+    flex-direction: column;
+    border: solid 1px black;
+    padding: 10px;
+    width: 98vw;
+    height: 40vh;
+    border-radius: 10px;
+    overflow: auto
+}
+#repoList h2{
+    border:solid 1px black;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+#repoCard{
+    border: solid 1px #E7E8E7;
+    margin: 8px;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #C0D5E7;
+}
+#cardTitle{
+    color: #555755;
+    font-size: 30px;
+}
+#repoInfo{
+    width: 40vw;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+
 }

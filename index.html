@@ -7,29 +7,25 @@
     <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
-    <div>
-            <div id="title">
-            <h1>GitHub Finder</h1>
+
+    <div id="titleWrapper">
+            <h1 id="title">GitHub Finder</h1>
     </div>
 
-    <div>
-        <h1>search github users</h1>
-        <h2>enter a username to fetch a user profile and repos</h2>
-        <input id="search" onchange="InputValyeHandler()"/>
+    <div id="searchWrapper">
+        <h1 style="font-size: 30px;">search github users</h1>
+        <h2 style="color:#CED0D3;font-weight: 500;">enter a username to fetch a user profile and repos</h2>
+        <input id="search" onchange="InputValyeHandler()" placeholder="Github ID"/>
     </div>
+ <div id="wrapper">
+        <div id="Loading">Loading</div>
 
-    <div id="Loading">Loading</div>
-    <div>
         <div id="userProfile"></div>
-    </div>
-    <div>
-        <div id="commitLog"></div>
-    </div>
-    <div>
-        <div id="repoList"></div>
-    </div>
 
+        <div id="repoList">
+        </div>
 </div>
+
     <script src="script.js"></script>
 </body>
 </html>
