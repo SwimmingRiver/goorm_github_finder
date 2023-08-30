@@ -92,9 +92,21 @@ table {
 }
 #userAvatar{
     width: 10vw;
+    border-radius: 5px;
+}
+#userInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 30px;
+    height: 20vh;
 }
 #userGitLog{
     height: 30vh;
+    width: 80vw;
+    border: solid 1px #E7E8E7;
+    margin: 10px;
+    border-radius: 12px;
 }
 #repoList{
     display:none;
@@ -104,12 +116,14 @@ table {
     width: 98vw;
     height: 40vh;
     border-radius: 10px;
+    margin-top: 25px;
     overflow: auto
 }
 #repoList h2{
     border:solid 1px black;
     padding: 10px;
     border-radius: 5px;
+
 
 }
 #repoCard{
